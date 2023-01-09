@@ -20,7 +20,7 @@ body {
   flex-direction: column;
 }
 h1 {
-  color: white;
+  color: rgb(148, 0, 0);
   text-align: center;
   font-size: 50px;
   padding-bottom: 10%;
@@ -55,7 +55,7 @@ nav img {
   content: "";
   width: 0;
   height: 2px;
-  background: #d6d2c4;
+  background: #620101;
   display: block;
   margin: auto;
   transition: 0.3s;
@@ -72,7 +72,7 @@ nav .sidebtn {
   padding: 5% 5%;
   margin: 10%;
   border: 2px groove #d6d2c4;
-  background: #5d3754;
+  background: #757575;
 }
 .paragraph-container p {
   color: white;
@@ -108,7 +108,7 @@ nav .sidebtn {
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   text-align: center;
-  background-color: #5d3754;
+  background-color: #6f6f6f;
 }
 
 .contact-left {
@@ -223,8 +223,8 @@ h2:after {
 }
 /*------------------------ Footer ------------------------*/
 .footer-distributed {
-  background-color: #ede8ec;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  background-color: #000000;
+  box-shadow: 0 1px 1px 0 rgb(0, 0, 0);
   box-sizing: border-box;
   width: 100%;
   text-align: left;

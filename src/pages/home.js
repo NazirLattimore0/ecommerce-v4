@@ -38,9 +38,8 @@ function Home() {
       </section>
       <div class="paragraph-container">
         <p>
-          Waxing Wandlight consists of the world's greatest wand makers. We put
-          time and care into each of our works, guaranteeing our customers
-          unique and powerful wands.
+          Kozy Collection is a clothing E-commerce site that resells exclusize
+          clothes that the world wants.
         </p>
       </div>
     </div>

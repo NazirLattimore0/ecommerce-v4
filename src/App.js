@@ -43,7 +43,7 @@ function App() {
             // onclick={showMenu()}
           />
         </nav>
-        <h1>Waxing Wandlight</h1>
+        <h1>Kozy Collection</h1>
       </header>
       <main>
         <Routes>
