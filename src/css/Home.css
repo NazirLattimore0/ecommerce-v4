@@ -12,7 +12,7 @@ body {
   overflow-x: hidden;
   min-height: 100vh;
   background-image: linear-gradient(
-      rgba(0, 0, 0, 0.75),
+      rgba(255, 255, 255, 0.75),
       rgba(226, 229, 230, 0.4)
     ),
     url(https://th.bing.com/th/id/R.0794c6ecbee6adfd336e29c47ae0c551?rik=%2flgm72jHtqaYZw&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fERJ1Jg2.jpg&ehk=p6fSPKQvFmL18QhNSQWCuk7EAnX5pxDcncK9Gxlu5so%3d&risl=&pid=ImgRaw&r=0);
@@ -108,12 +108,13 @@ nav .sidebtn {
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   text-align: center;
-  background-color: #6f6f6f;
+  background-color: transparent;
 }
 
 .contact-left {
   height: 100%;
-  background: url(/public/images/USH_Wands_VB.jpeg) no-repeat center;
+  background: url("https://www.bing.com/images/search?view=detailV2&ccid=8m4hZeGn&id=DE98C13F8362093B9337D6234A05913B36748A44&thid=OIP.8m4hZeGn4kWBA6Lk9MpelwHaHa&mediaurl=https%3a%2f%2fplaydotapparel.com%2fwp-content%2fuploads%2f2017%2f05%2fIMG_4737-1.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.f26e2165e1a7e2458103a2e4f4ca5e97%3frik%3dRIp0NjuRBUoj1g%26pid%3dImgRaw%26r%3d0&exph=1024&expw=1024&q=kaws+figure&simid=608053346868922713&FORM=IRPRST&ck=C5D407535C682B752CCF65AAC5779816&selectedIndex=0")
+    no-repeat center;
   background-size: cover;
 }
 
@@ -144,7 +145,7 @@ h2:after {
   width: 100%;
   background-color: white;
   outline: none;
-  border: 2px groove #d6d2c4;
+  border: 1px groove #000000;
   font-size: 1.2rem;
   margin-bottom: 22px;
   transition: 0.4s;
@@ -156,7 +157,7 @@ h2:after {
 
 .inputf:focus {
   background-color: white;
-  border: 3px solid #0783a2;
+  border: 1px solid #323232;
 }
 .area {
   min-height: 150px;

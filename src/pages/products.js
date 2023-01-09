@@ -2,13 +2,13 @@ import React from "react";
 // import { useState } from "react";
 // import { useEffect } from "react";
 import axios from "axios";
-
+import { Helmet } from "react-helmet";
 class Productas extends React.Component {
   state = {
     products: [],
   };
   componentDidMount() {
-    axios.get("http://localhost:8800").then((res) => {
+    axios.get("http://localhost:8000").then((res) => {
       const products = res.data;
       this.setState({ products: products });
     });

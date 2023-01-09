@@ -1,33 +1,27 @@
 const express = require("express");
 const mysql = require("mysql2");
-const path = require("path");
+// const path = require("path");
 const app = express();
 
-const connection = mysql.createConnection({
+const db = mysql.createPool({
   host: "localhost",
   user: "root",
-  password: "August21972",
+  password: "August21972$$",
   database: "blockbuster",
 });
 
-connection.connect();
-
-app.get("/Products", (req, res) => {
-  connection.query("SELECT * FROM product_info", (error, results) => {
-    if (error) {
-      res.status(500).send(error);
-    } else {
-      res.status(200).send(results);
-    }
-  });
+app.get("/", (req, res) => {
+  const sqlInsert = "INSTER INTO product_info";
+  db.query(sqlInsert, (err, result) => {});
+  res.send("hello Nazir");
 });
 
-app.use(express.static(path.join(__dirname, "./build")));
+// app.use(express.static(path.join(__dirname, "./build")));
 
-app.use((req, res) => {
-  res.sendFile(path.join(__dirname, "./pages", "home.js"));
-});
+// app.use((req, res) => {
+//   res.sendFile(path.join(__dirname, "./src", "products.js"));
+// });
 
-app.listen(8800, () => {
-  console.log("Server listening on port 8800");
+app.listen(8000, () => {
+  console.log("Server listening on port 8000");
 });

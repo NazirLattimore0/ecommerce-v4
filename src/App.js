@@ -5,7 +5,7 @@ import Home from "./pages/home";
 import Productas from "./pages/products";
 import Contact from "./pages/contact";
 import Footer from "./components/footer/footer";
-import logo from "./images/Waxing_Wandlight.png";
+import logo from "./images/cross.pmg.jpeg";
 // import showMenu from "./components/mobileMenu/showMenu";
 // import hideMenu from "./components/mobileMenu/hideMenu";
 
