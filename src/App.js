@@ -1,8 +1,9 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom";
 import "./css/Home.css";
+import "./css/products.css";
 import Home from "./pages/home";
-import { Products } from "./pages/products";
+import ProductsList from "./pages/products";
 import Contact from "./pages/contact";
 import Footer from "./components/footer/footer";
 import logo from "./images/cross.pmg.jpeg";
@@ -47,7 +48,7 @@ function App() {
       <main>
         <Routes>
           <Route index element={<Home />} />
-          <Route path="products" element={<Products />} />
+          <Route path="products" element={<ProductsList />} />
           <Route path="contact" element={<Contact />} />
         </Routes>
       </main>
