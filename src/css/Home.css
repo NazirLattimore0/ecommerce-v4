@@ -76,6 +76,9 @@ nav .sidebtn {
   text-align: center;
   font-size: 2rem;
 }
+img {
+  height: 300px;
+}
 /* ------------------------Contact Us Page------------------------*/
 .container {
   position: relative;
@@ -265,7 +268,7 @@ h2:after {
   }
   .nav-links {
     position: fixed;
-    background-image: linear-gradient(#704365f5, #015368c5);
+    background-image: linear-gradient(#000000f5, #000000c5);
     height: 100vh;
     width: 200px;
     top: 0;

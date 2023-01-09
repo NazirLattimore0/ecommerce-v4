@@ -1,17 +1,21 @@
 import "../components/slider/slider.css";
 import "../components/slider/sliderrepeater.js";
 import "../components/slider/sliderManual.js";
-import slider0 from "../images/Belovedblacktee.png ";
+import slider0 from "../images/Belovedblacktee.png";
+// import ManualNav from "../components/slider/sliderManual.js";
+// import Repeat from "../components/slider";
 
 function Home() {
   return (
     <div className="Home">
       <h1>Kozy Collection</h1>
       <section class="slider">
-        <div class="slides">
+        <div class="slide">
           <div class="slide active">
-            <img src={slider0} alt="hoodie" />
+            <img src={slider0} alt="tee" />
           </div>
+          {/* <ManualNav />
+          <Repeat /> */}
           <div class="slide-manual">
             <div class="btn active"></div>
             <div class="btn"></div>

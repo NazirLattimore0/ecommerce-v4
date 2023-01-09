@@ -2,7 +2,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom";
 import "./css/Home.css";
 import Home from "./pages/home";
-import Products from "./pages/products";
+import { Products } from "./pages/products";
 import Contact from "./pages/contact";
 import Footer from "./components/footer/footer";
 import logo from "./images/cross.pmg.jpeg";
