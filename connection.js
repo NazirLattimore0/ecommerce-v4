@@ -1,69 +1,33 @@
-// const express = require("express");
-// const mysql = require("mysql2");
-// // const path = require("path");
-// const app = express();
-
-// const db = mysql.createPool({
-//   host: "localhost",
-//   user: "root",
-//   password: "August21972$$",
-//   database: "blockbuster",
-// });
-
-// app.get("/", (req, res) => {
-//   const sqlInsert = "INSTER INTO product_info";
-//   db.query(sqlInsert, (err, result) => {});
-//   res.send("hello Nazir");
-// });
-
-// app.use(express.static(path.join(__dirname, "./build")));
-
-// app.use((req, res) => {
-//   res.sendFile(path.join(__dirname, "./src", "products.js"));
-// });
-
-// app.listen(8000, () => {
-//   console.log("Server listening on port 8000");
-// });
 const express = require("express");
 const mysql = require("mysql2");
-const bodyParser = require("body-parser");
+const path = require("path");
 const app = express();
-const port = process.env.PORT || 8000;
 
-app.use(bodyParser.urlencoded({ extended: false }));
-
-app.use(bodyParser.json);
-
-const pool = mysql.createPool({
+const connection = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "August21972$$",
+  password: "August21972",
   database: "blockbuster",
 });
 
-app.get("", (req, res) => {
-  pool.getConnection((err, connection) => {
-    if (err) throw err;
-    console.log(`connected as id ${connection.threadId}`);
-    connection.query("SELECT * from products", (err, rows) => {
-      connection.release(); // return connection to pool
+connection.connect();
 
-      if (!err) {
-        res.send(rows);
-      } else {
-        console.log.err;
-      }
-    });
+app.get("/Products", (req, res) => {
+  connection.query("SELECT * FROM product_info", (error, results) => {
+    if (error) {
+      res.status(500).send(error);
+    } else {
+      res.status(200).send(results);
+    }
   });
 });
 
-// app.use(express.static(path.join(__dirname, "./build")));
+app.use(express.static(path.join(__dirname, "./build")));
 
-// app.use((req, res) => {
-//   res.sendFile(path.join(__dirname, "./src", "products.js"));
-// });
+app.use((req, res) => {
+  res.sendFile(path.join(__dirname, "./src", "products.js"));
+});
 
-app.listen(8000, () => {
-  console.log("Server listening on port 8000");
+app.listen(3001, () => {
+  console.log("Server listening on port 3001");
 });

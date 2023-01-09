@@ -176,49 +176,7 @@ h2:after {
   background-color: #003b49;
 }
 /*------------------------Product Page------------------------*/
-#data-output {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  background: rgba(214, 210, 196, 0.58);
-}
-.prod-box {
-  flex: 1 1 300px;
-  flex-grow: 0;
-  background: #003b49;
-  border: 1px groove #d6d2c4;
-  position: relative;
-  overflow: hidden;
-  margin: 20px;
-}
-.prod-box .prod-image {
-  padding: 10px;
-  background: #5d3754;
-  text-align: center;
-}
-.prod-box .prod-image img {
-  height: 200px;
-  width: 250px;
-  object-fit: cover;
-  filter: drop-shadow(0 3px 5px black);
-}
-.prod-box .prod-info .prod-title {
-  padding: 10px;
-  color: white;
-  font-size: 1.2rem;
-  text-align: center;
-}
-.prod-box .prod-info .prod-desc {
-  text-align: center;
-  padding: 15px 10px;
-  color: white;
-}
-.prod-box .prod-info .subInfo {
-  text-align: center;
-  padding: 15px 10px;
-  color: white;
-}
+
 /*------------------------ Footer ------------------------*/
 .footer-distributed {
   background-color: #000000;

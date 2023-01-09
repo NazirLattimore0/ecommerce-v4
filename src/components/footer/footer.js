@@ -42,7 +42,7 @@ export default class footer extends Component {
             <a href="products.html"> Products</a>
             <a href="contact.html"> Contact Us</a>
           </p>
-          <p>Waxing Wandlight &copy; 2022</p>
+          <p>Kozy Collection &copy; 2022</p>
         </div>
       </footer>
     );

@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"name": "E__commercev2",
+		"path": "../../.."
+	},
+	{
+		"name": "src",
+		"path": "../../../../React-Amplify-App/src"
+	}
+],
+  "settings": {}
+}

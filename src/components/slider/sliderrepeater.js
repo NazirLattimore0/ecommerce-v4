@@ -20,7 +20,7 @@ var repeat = function (activeClass) {
         return;
       }
       repeater();
-    }, 10000);
+    }, 1000000);
   };
   repeater();
 };
