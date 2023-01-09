@@ -8,7 +8,7 @@ class Productas extends React.Component {
     products: [],
   };
   componentDidMount() {
-    axios.get("http://localhost:3001").then((res) => {
+    axios.get("http://localhost:8800").then((res) => {
       const products = res.data;
       this.setState({ products: products });
     });
