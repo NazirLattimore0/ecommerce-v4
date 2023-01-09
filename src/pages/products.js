@@ -2,7 +2,6 @@ import React from "react";
 // import { useState } from "react";
 // import { useEffect } from "react";
 import axios from "axios";
-import { Helmet } from "react-helmet";
 class Productas extends React.Component {
   state = {
     products: [],

@@ -11,16 +11,13 @@ body {
   width: 100%;
   overflow-x: hidden;
   min-height: 100vh;
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.75),
-      rgba(226, 229, 230, 0.4)
-    ),
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)),
     url(https://th.bing.com/th/id/R.0794c6ecbee6adfd336e29c47ae0c551?rik=%2flgm72jHtqaYZw&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fERJ1Jg2.jpg&ehk=p6fSPKQvFmL18QhNSQWCuk7EAnX5pxDcncK9Gxlu5so%3d&risl=&pid=ImgRaw&r=0);
   display: flex;
   flex-direction: column;
 }
 h1 {
-  color: rgb(148, 0, 0);
+  color: rgb(229, 128, 27);
   text-align: center;
   font-size: 50px;
   padding-bottom: 10%;
@@ -47,7 +44,7 @@ nav img {
   position: relative;
 }
 .nav-links ul li a {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 18px;
 }
@@ -55,7 +52,7 @@ nav img {
   content: "";
   width: 0;
   height: 2px;
-  background: #620101;
+  background: #dd7105;
   display: block;
   margin: auto;
   transition: 0.3s;
@@ -75,7 +72,7 @@ nav .sidebtn {
   background: #757575;
 }
 .paragraph-container p {
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
   font-size: 2rem;
 }
