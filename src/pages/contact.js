@@ -21,7 +21,7 @@ function Contact() {
             <input
               type="text"
               class="inputf"
-              placeholder="(XXX)-XXX-XXXX"
+              placeholder="Phone number "
               required
             />
             <textarea
@@ -29,7 +29,7 @@ function Contact() {
               placeholder="Your Message"
               required
             ></textarea>
-            <button class="send">Send Your Owl</button>
+            <button class="send">Send A Message</button>
           </div>
         </div>
       </form>
