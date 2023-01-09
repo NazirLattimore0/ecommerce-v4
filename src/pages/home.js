@@ -6,6 +6,7 @@ import "../components/slider/sliderManual.js";
 function Home() {
   return (
     <div className="Home">
+      <h1>Kozy Collection</h1>
       <section class="slider">
         <div class="slides">
           <div class="slide active">

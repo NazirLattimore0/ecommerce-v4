@@ -29,7 +29,7 @@ function Contact() {
               placeholder="Your Message"
               required
             ></textarea>
-            <button class="send">Send Your Owl</button>
+            <button class="send">Submit</button>
           </div>
         </div>
       </form>

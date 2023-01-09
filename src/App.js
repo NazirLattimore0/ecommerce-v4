@@ -2,7 +2,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom";
 import "./css/Home.css";
 import Home from "./pages/home";
-import Productas from "./pages/products";
+import Products from "./pages/products";
 import Contact from "./pages/contact";
 import Footer from "./components/footer/footer";
 import logo from "./images/cross.pmg.jpeg";
@@ -43,12 +43,11 @@ function App() {
             // onclick={showMenu()}
           />
         </nav>
-        <h1>Kozy Collection</h1>
       </header>
       <main>
         <Routes>
           <Route index element={<Home />} />
-          <Route path="products" element={<Productas />} />
+          <Route path="products" element={<Products />} />
           <Route path="contact" element={<Contact />} />
         </Routes>
       </main>
